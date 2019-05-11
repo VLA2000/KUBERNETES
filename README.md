@@ -62,12 +62,13 @@
 <img src="media/1.Instalacion de minikube y kubectl/1-4.png" height="400" width="550"/> 
 <br>
 <p>En la siguiente captura podemos comprobar el número de nodos que tenemos(en este caso, el nodo que tenemos actualmente) y aparece clasificado por los siguientes datos: Nombre, Status, Roles, Age y Version.</p>
-<img src="media/1.Instalacion de minikube y kubectl/1-5.png" height="400" width="550"/>
+<img src="media/1.Instalacion de minikube y kubectl/1-5(para comprobar el numero de nodos).png" height="400" width="550"/>
+<br>
+<p>Por último, en este punto para añadir el componente ingress
 
 <h2>Tolerancia a fallos</h2>
 <p>Un POD es un grupo de: una dirección "IP", una o más aplicaciones y uno o<br> más volúmenes.Representa una unidad que puede realizar una tarea / servicio.<p>
 <br>
-
 Creamos un Pod para meter nuestra aplicación web
 <img src="media/2-1(creamos un pod).png" height="400" width="550"/>
 <br>
@@ -77,38 +78,44 @@ Podemos comprobar el número de Pods con el siguiente comando
 Si eliminamos el pod con el siguiente comando nos podemos dar cuenta de que se Kubernetes nos crea automáticamente otro pod
 <img src="media/2-3(si eliminamos el pod con el comando puesto, podemos observar que kubernete crea otro pod automaticamente).png" height="400" width="550"/>
 <br>
-<p>Utilizamos el siguiente comando para comprobar el recurso deployment</p><br>
+<p>Utilizamos el siguiente comando para comprobar el recurso deployment:</p><br>
+
+<img src="media/2-4(comando para comprobar el recurso deployment)" height="400" width="550"/>
+<br>
+<p>Y por último ejecutaremos el siguiente comando para comprobar el recurso<br> ReplicaSet</p><br>
+<img src="media/2-4(comando para comprobar el recurso deployment)" height="400" width="550"/>
+
 
 <h2>Escalabilidad</h2>
 
 <p>RepiclateSet nos permite replicar los pods. Nosotros utilizaremos el siguiente<br> comando para replicar los pods::<br></p>
-<img src="media/3.Escalabilidad/3-1(podemos replicar un pod con este comando)" height="400" width="550"/>
+<img src="media/3-1(podemos replicar un pod con este comando)" height="400" width="550"/>
 <br>
 
 <p>Con el siguiente comando comprobaremos cómo se han creado los 4 pods en base<br> al primero y que cada uno se está ejecutando en un nodo diferente:</p><br>
 
-<img src="media/3.Escalabilidad/3-2(y comprobaremos con este otro comando como se ha creado 4 pods en base al primero que creamos)" height="400" width="550"/>
+<img src="media/3-2(y comprobaremos con este otro comando como se ha creado 4 pods en base al primero que creamos)" height="400" width="550"/>
 <br>
 
 <h2>Balanceo de carga</h2>
 <p>Crearemos un recurso Servicio para acceder a la aplicación que vamos a crear,<br> mediante el siguiente comando:</p><br>
 
-<img src="media/4.Balanceo de carga/4-1(con este comando crearemos un recurso Servicio para acceder a la aplicación que estamos creando)" height="400" width="550"/>
+<img src="media/4-1(con este comando crearemos un recurso Servicio para acceder a la aplicación que estamos creando)" height="400" width="550"/>
 <br>
 
 <p>Ahora comprobaremos el puerto y la ip asignada de nuestra aplicación con los<br> siguientes comandos:</p><br>
 
-<img src="media/4.Balanceo de carga/4-2(Ahora simplemente comprobamos el puerto y la ip asignada de nuestra aplicación con los siguientes comandos)" height="400" width="550"/>
+<img src="media/4-2(Ahora simplemente comprobamos el puerto y la ip asignada de nuestra aplicación con los siguientes comandos)" height="400" width="550"/>
 <br>
 
 <p>Por último comprobaremos que accede correctamente a nuestra aplicación<br> introduciendo la ip y el puerto</p><br>
 
-<img src="media/4.Balanceo de carga/4-3(y comprobamos que accede correctamente introduciendo la ip y el puerto)" height="400" width="550"/>
+<img src="media/4-3(y comprobamos que accede correctamente introduciendo la ip y el puerto)" height="400" width="550"/>
 <br>
 
 <h2>Actualizaciones</h2>
 Si queremos actualizar nuestra aplicación , después de hacer los cambios correspondientes y subirlo a la Web DockerHub basta con poner este el siguiente comando
-<img src="media/5.Actualizaciones/5-1(si quisieramos actualizar nuestra aplicacion a otra version mas nueva, despues de hacer los cambios correspondientes y subirlo a dockerhub, basta con poner el comando siguiente).png" height="400" width="550"/>
+<img src="media/5-1(si quisieramos actualizar nuestra aplicacion a otra version mas nueva, despues de hacer los cambios correspondientes y subirlo a dockerhub, basta con poner el comando siguiente).png" height="400" width="550"/>
 <br>
 En esta imagen podremos observar si se ha actualizado nuestra aplicación <img src="media/5.Actualizaciones/5-2(comprobamos que se ha actualizado correctamente).png" height="400" width="550"/>
 <br>
