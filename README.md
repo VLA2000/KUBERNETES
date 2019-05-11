@@ -82,21 +82,21 @@ Podemos comprobar el número de Pods con el siguiente comando
 <br>
 <p>Utilizamos el siguiente comando para comprobar el recurso deployment:</p>
 <br>
-<img src="media/2.Tolerancia a fallos/2-4(comando para comprobar el recurso deployment)" height="400" width="550"/>
+<img src="media/2.Tolerancia a fallos/2-4(comando para comprobar el recurso deployment).png" height="400" width="550"/>
 <br>
 <p>Y por último ejecutaremos el siguiente comando para comprobar el recurso<br> ReplicaSet</p><br>
-<img src="media/2.Tolerancia a fallos/2-5(y comando para comprobar el recurso Replicaset)" height="400" width="550"/>
+<img src="media/2.Tolerancia a fallos/2-5(y comando para comprobar el recurso Replicaset).png" height="400" width="550"/>
 
 
 <h2>Escalabilidad</h2>
 
-<p>RepiclateSet nos permite replicar los pods. Nosotros utilizaremos el siguiente<br> comando para replicar los pods:</p><br>
-<img src="media/3.Escalabilidad/3-1(podemos replicar un pod con este comando).png" height="400" width="550"/>
+<p>RepiclateSet nos permite replicar los pods. Nosotros utilizaremos el siguiente<br> comando para replicar los pods:<br></p>
+<img src="media/3.Escabilidad/3-1(podemos replicar un pod con este comando).png" height="400" width="550"/>
 <br>
 
 <p>Con el siguiente comando comprobaremos cómo se han creado los 4 pods en base<br> al primero y que cada uno se está ejecutando en un nodo diferente:</p><br>
 
-<img src="media/3.Escalabilidad/3-2(y comprobaremos con este otro comando como se ha creado 4 pods en base al primero que creamos).png" height="400" width="550"/>
+<img src="media/3.Escabilidad/3-2(y comprobaremos con este otro comando como se ha creado 4 pods en base al primero que creamos).png" height="400" width="550"/>
 <br>
 
 <h2>Balanceo de carga</h2>
@@ -117,9 +117,10 @@ Podemos comprobar el número de Pods con el siguiente comando
 
 <h2>Actualizaciones</h2>
 Si queremos actualizar nuestra aplicación , después de hacer los cambios correspondientes y subirlo a la Web DockerHub basta con poner este el siguiente comando
-<img src="media/5.Actualizaciones/5-1(si quisieramos actualizar nuestra aplicacion a otra version mas nueva, despues de hacer los cambios correspondientes y subirlo a dockerhub, basta con poner el comando siguiente).png" height="400" width="550"/>
+<img src="media/5.Actualizaciones/5-1(si quisieramos actualizar nuestra aplicacion a otra version mas nueva, despues de hacer los cambios correspondientes y subirlo a dockerhub, basta con poner el comando siguiente) .png"  height="400" width="550"/>
 <br>
-En esta imagen podremos observar si se ha actualizado nuestra aplicación <img src="media/5.Actualizaciones/5-2(comprobamos que se ha actualizado correctamente).png" height="400" width="550"/>
+<p>En esta imagen podremos observar si se ha actualizado nuestra aplicación</p><br> 
+<img src="media/5.Actualizaciones/5-2(comprobamos que se ha actualizado correctamente).png" height="400" width="550"/>
 <br>
 <h2>Rollback</h2>
 Si queremos volver a la versión anterior solo bastará con hacer un rollback
