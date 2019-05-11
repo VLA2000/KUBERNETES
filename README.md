@@ -73,11 +73,11 @@
 <h2>Tolerancia a fallos</h2>
 <p>Un POD es un grupo de: una dirección "IP", una o más aplicaciones y uno o<br> más volúmenes.Representa una unidad que puede realizar una tarea / servicio.<p>
 <br>
-Creamos un Pod para meter nuestra aplicación web
+<p>Creamos un Pod para meter nuestra aplicación web</p>
 <br>
 <img src="media/2.Tolerancia a fallos/2-1(creamos un pod).png" height="400" width="550"/>
 <br>
-Podemos comprobar el número de Pods con el siguiente comando
+<p>Podemos comprobar el número de Pods con el siguiente comando</p>
 <img src="media/2.Tolerancia a fallos/2-2(podemos comprobar el numero de pods con este comando).png" height="400" width="550"/>
 <br>
 <p>Si eliminamos el pod con el siguiente comando nos podemos dar cuenta de que<br> Kubernetes nos crea automáticamente otro pod<br></p>
@@ -116,7 +116,7 @@ Podemos comprobar el número de Pods con el siguiente comando
 <br>
 
 <h2>Actualizaciones</h2>
-Si queremos actualizar nuestra aplicación , después de hacer los cambios correspondientes y subirlo a la Web DockerHub basta con poner este el siguiente comando
+<p>Si queremos actualizar nuestra aplicación , después de hacer los cambios correspondientes y subirlo a la Web DockerHub basta con poner este el siguiente comando</p>
 <br>
 <img src="media/5.Actualizaciones/5-1(si quisieramos actualizar nuestra aplicacion a otra version mas nueva, despues de hacer los cambios correspondientes y subirlo a dockerhub, basta con poner el comando siguiente) .png"  height="400" width="550"/>
 <br>
@@ -126,28 +126,28 @@ Si queremos actualizar nuestra aplicación , después de hacer los cambios corre
 <br>
 
 <h2>Rollback</h2>
-Si queremos volver a la versión anterior solo bastará con hacer un rollback
+<p>Si queremos volver a la versión anterior solo bastará con hacer un rollback</p>
 <br>
 <img src="media/6.rollback/6-1.png" height="400" width="550"/>
 <br>
 
 <h2>Enrutando nuestra aplicación</h2>
-Para enrutar nuestra aplicación previamente creamos el archivo
+<p>Para enrutar nuestra aplicación previamente creamos el archivo</p>
 <br>
 <img src="media/7.Enrutando nuestra aplicacion/7-1(creamos el archivo).png" height="400" width="550"/>
 <br>
-Configuramos el archivo ingress.yaml
+<p>Configuramos el archivo ingress.yaml</p>
 <br> 
 <img src="media/7.Enrutando nuestra aplicacion/7-2(configuramos el archivo ingress.yaml).png" height="400" width="550"/>
 <br>
-Creamos el recurso Ingress
+<p>Creamos el recurso Ingress</p>
 <br>
 <img src="media/7.Enrutando nuestra aplicacion/7-3(creamos el recurso ingress).png" height="400" width="550"/>
 <br>
-Comprobamos el recurso creado
+<p>Comprobamos el recurso creado</p>
 <br>
 <img src="media/7.Enrutando nuestra aplicacion/7-4(y comprobamos el recurso creado).png" height="400" width="550"/>
-Finalmente comprobamos su funcionamiento
+<p>Finalmente comprobamos su funcionamiento</p>
 <br>
 <img src="media/7.Enrutando nuestra aplicacion/7-5(y comprobamos que funciona).png" height="400" width="550"/>
 <br>
